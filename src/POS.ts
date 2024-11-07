@@ -100,7 +100,7 @@ export class POS {
                 return false;
             }
 
-            itemNames.add(item)
+            itemNames.add(item.name)
         }
 
         // Check for duplicate buyer names
