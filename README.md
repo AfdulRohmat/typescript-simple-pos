@@ -50,6 +50,23 @@ The POS system enforces several validation checks to ensure data integrity befor
 3. **Unique Names**: Both item names and buyer names must be unique. If a duplicate is detected in the input, the POS will print an error and halt.
 4. **Error Messages**: All error messages are printed in English for consistency.
 
+## Example Error Response
+1. **Mandatory Regular Price**
+   ```
+    Error: Item "oval hat" does not have a regular price.
+    Validation failed. Summary cannot be generated.
+   ```
+2. **Duplicate Item Name**
+   ```
+    Error: Duplicate item name found - "square hat"
+    Validation failed. Summary cannot be generated.
+   ```
+3. **Duplicate Buyer Name**
+   ```
+    Error: Duplicate buyer name found - "Ani"
+    Validation failed. Summary cannot be generated.
+   ```
+
 ## Example Input
 ```
 {
